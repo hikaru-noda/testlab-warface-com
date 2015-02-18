@@ -1,0 +1,18 @@
+$ORIGIN testlab.warface.com.            ; start of this zone file in the name space, not necessary if included from named.conf
+$TTL 1h                                 ; default expiration time of all resource records without their own TTL value
+
+@               IN      SOA ns1.testlab.warface.com. netops.crytek.com. ( ; @ is replaced with . in email address
+
+                        20150215001     ; serial number of this zone file
+                        1d              ; slave refresh (1 day)
+                        2h              ; slave retry time in case of a problem (2 hours)
+                        4w              ; slave expiration time (4 weeks)
+                        1h              ; minimum caching time in case of failed lookups (1 hour)
+                )
+
+
+                IN      NS      ns1.testlab.warface.com
+
+
+puppet1         IN      A       10.100.80.19
+puppet          IN      CNAME   puppet1.testlab.warface.com.
