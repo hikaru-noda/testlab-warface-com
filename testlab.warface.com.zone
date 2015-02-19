@@ -16,3 +16,4 @@ $TTL 1h                                 ; default expiration time of all resourc
 
 puppet1         IN      A       10.100.80.19
 puppet          IN      CNAME   puppet1.testlab.warface.com.
+gitlab          IN      CNAME   puppet1.testlab.warface.com.
