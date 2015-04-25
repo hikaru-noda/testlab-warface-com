@@ -14,7 +14,9 @@ $TTL 1h                                 ; default expiration time of all resourc
                 IN      NS      ns1.testlab.warface.com
 
 
-puppet1         IN      A       10.100.80.19
+puppet1         IN      A       10.100.80.13
+foreman1	IN	A	10.100.80.14
+gitlab		IN	A	10.100.80.15
 log1	        IN      A       10.100.80.21
 log2	        IN      A       10.100.80.22
 com1		IN	A	10.100.80.24
@@ -23,4 +25,3 @@ db2		IN	A	10.100.80.28
 mas1		IN	A	10.100.80.25
 ded1		IN	A	10.100.80.26
 puppet          IN      CNAME   puppet1.testlab.warface.com.
-gitlab          IN      CNAME   puppet1.testlab.warface.com.
